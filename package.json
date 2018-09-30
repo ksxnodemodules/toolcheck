@@ -1,5 +1,5 @@
 {
-  "name": "require-external-programs",
+  "name": "toolchain",
   "version": "0.0.0",
   "description": "Alert if user does not have required executables",
   "main": "index.js",
@@ -11,9 +11,10 @@
     "url": "git+https://github.com/ksxnodemodules/require-external-programs.git"
   },
   "keywords": [
+    "check",
+    "external",
     "program",
     "executable",
-    "check",
     "environment"
   ],
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",

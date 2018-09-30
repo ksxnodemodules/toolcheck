@@ -1,6 +1,6 @@
 'use strict'
 const process = require('process')
-const config = require('cosmiconfig')('require-external-programs')
+const config = require('cosmiconfig')('toolchain')
 const check = require('./index')
 
 check(config).then(
