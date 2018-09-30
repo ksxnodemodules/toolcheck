@@ -14,7 +14,7 @@ main().then(
   error => {
     if (error instanceof check.NotFoundError) {
       console.error('[ERROR] One or more required programs is missing')
-      error.list.forEach(name => console.info(`  - ${name}`))
+      error.list.forEach(name => console.error(`  - ${name}`))
       process.exit(1)
     } else {
       console.error(error)
