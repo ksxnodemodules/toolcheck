@@ -3,7 +3,6 @@ dependencies:
   '@types/node': 10.11.3
   '@types/which': 1.3.1
   cosmiconfig: 5.0.6
-  restricted-parallel-processes: 0.0.14
   which: 1.3.1
 packages:
   /@types/cosmiconfig/5.0.3:
@@ -16,10 +15,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3AvcEJAh9EMatxs+OxAlvAEs7OTy6AG94mcH1iqyVDwVVndekLxzwkWQ/Z4SDbY6GO2oyUXyWW8tQ4rENSSQVQ==
-  /@types/ramda/0.25.38:
-    dev: false
-    resolution:
-      integrity: sha512-6vkbUF1cg9CIaeZiSvbk6e25rOBbXBXixiZiV4Eai4WgwrmI3wBaH/TKE0tp9JEfzQFrv3eOoI0EjdBJaUfnIQ==
   /@types/which/1.3.1:
     dev: false
     resolution:
@@ -53,12 +48,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-  /immutable/3.8.2:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
   /is-arrayish/0.2.1:
     dev: false
     resolution:
@@ -85,18 +74,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
-  /monorepo-shared-assets/0.0.17:
-    dependencies:
-      '@types/node': 10.11.3
-      '@types/ramda': 0.25.38
-      immutable: 3.8.2
-      ramda: 0.25.0
-      tslib: 1.9.3
-    dev: false
-    engines:
-      node: '>= 8.9.0'
-    resolution:
-      integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
   /parse-json/4.0.0:
     dependencies:
       error-ex: 1.3.2
@@ -106,38 +83,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-vjX1Qlvh9/bHRxhPmKeIy5lHfuA=
-  /ramda/0.25.0:
-    dev: false
-    resolution:
-      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
-  /restricted-concurrent-actions/0.0.12:
-    dependencies:
-      '@types/node': 10.11.3
-      monorepo-shared-assets: 0.0.17
-      tslib: 1.9.3
-    dev: false
-    engines:
-      node: '>= 8.9.0'
-    resolution:
-      integrity: sha512-RQN6Nlg9YKauznlxWuh1DpUxoAFPf8DQ368cQ6s09ImbBy3V6uTHLK9lTW2CPaqkR+OqxHiy/6Qsyi3ao9UtpQ==
-  /restricted-parallel-processes/0.0.14:
-    dependencies:
-      '@types/node': 10.11.3
-      restricted-concurrent-actions: 0.0.12
-      tslib: 1.9.3
-    dev: false
-    engines:
-      node: '>= 8.9.0'
-    resolution:
-      integrity: sha512-LElo0d3vzJ3Se0tzAwV9kjysenvXqfuaWtcnzavYPCrobUfTllF5VMEBgC6q0CjOg4Mklk6T6BZoMob6AJNN8A==
   /sprintf-js/1.0.3:
     dev: false
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-  /tslib/1.9.3:
-    dev: false
-    resolution:
-      integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
   /which/1.3.1:
     dependencies:
       isexe: 2.0.0
@@ -153,5 +102,4 @@ specifiers:
   '@types/node': ^10.11.3
   '@types/which': ^1.3.1
   cosmiconfig: ^5.0.6
-  restricted-parallel-processes: ^0.0.14
   which: ^1.3.1
