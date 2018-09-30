@@ -60,4 +60,4 @@ class ExternalError extends Error {
   }
 }
 
-module.exports = main
+module.exports = Object.assign(main, { NotFoundError, ExternalError })
