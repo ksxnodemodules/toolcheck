@@ -7,7 +7,7 @@ const which = require('which').sync
  * @param config.names Names of required executables
  * @returns A promise that resolves when requirement is met, rejects for otherwise
  */
-async function main (config) {
+async function main (config = {}) {
   if (typeof config !== 'object' || !config) {
     throw new TypeError('config must be an object')
   }

@@ -4,7 +4,7 @@
  * @param config.names Names of required executables
  * @returns A promise that resolves when requirement is met, rejects for otherwise
  */
-declare function main (config: main.Configuration): Promise<main.Return>
+declare function main (config?: main.Configuration): Promise<main.Return>
 
 declare namespace main {
   interface Configuration {
