@@ -1,7 +1,9 @@
 'use strict'
 const process = require('process')
-const config = require('cosmiconfig')('toolchain')
+const cosmiconfig = require('cosmiconfig')
 const check = require('./index')
+const { name } = require('./package.json')
+const config = cosmiconfig(name)
 
 check(config).then(
   () => process.exit(0),
