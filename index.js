@@ -26,7 +26,7 @@ async function main (config = {}) {
 
   for (const executable of names) {
     if (typeof executable !== 'string') {
-      throw new TypeError(`config.names contains non-string member`)
+      throw new TypeError(`config.names contains non-string member: ${JSON.stringify(executable)}`)
     }
 
     try {
