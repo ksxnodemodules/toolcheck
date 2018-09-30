@@ -1,4 +1,4 @@
-# toolchain
+# toolcheck
 
 Alert if user does not have required executables
 
@@ -6,7 +6,7 @@ Alert if user does not have required executables
 
 ### Configuration Files
 
-This package uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig) to load configuration, therefore user can write configuration into `.toolchainrc`, `.toolchainrc.yaml`, `.toolchainrc.json` or field `"toolchain"` of `package.json`.
+This package uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig) to load configuration, therefore user can write configuration into `.toolcheckrc`, `.toolcheckrc.yaml`, `.toolcheckrc.json` or field `"toolcheck"` of `package.json`.
 
 ### Configration Object Structure
 
@@ -18,7 +18,7 @@ interface Configration {
 
 ### Example
 
-**.toolchainrc:**
+**.toolcheckrc:**
 
 ```json
 {
