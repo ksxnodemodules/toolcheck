@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ksxnodemodules/require-external-programs.git"
+    "url": "git+https://github.com/ksxnodemodules/toolcheck.git"
   },
   "keywords": [
     "check",
@@ -21,9 +21,9 @@
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ksxnodemodules/require-external-programs/issues"
+    "url": "https://github.com/ksxnodemodules/toolcheck/issues"
   },
-  "homepage": "https://github.com/ksxnodemodules/require-external-programs#readme",
+  "homepage": "https://github.com/ksxnodemodules/toolcheck#readme",
   "dependencies": {
     "cosmiconfig": "^5.0.6",
     "which": "^1.3.1",
