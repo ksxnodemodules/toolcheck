@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "Alert if user does not have required executables",
   "main": "index.js",
+  "bin": "bin.js",
   "scripts": {
     "install": "node install.js"
   },
