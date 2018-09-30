@@ -13,7 +13,7 @@ main().then(
   () => process.exit(0),
   error => {
     if (error instanceof check.NotFoundError) {
-      console.error('[ERROR] One or more required programs is missing')
+      console.error('[ERROR] One or more required programs is missing:')
       error.list.forEach(name => console.error(`  - ${name}`))
       process.exit(1)
     } else {
