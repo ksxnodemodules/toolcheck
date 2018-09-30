@@ -3,9 +3,13 @@ const process = require('process')
 const cosmiconfig = require('cosmiconfig')
 const check = require('./index')
 const { name } = require('./package.json')
-const config = cosmiconfig(name)
 
-check(config).then(
+async function main () {
+  const { config } = await cosmiconfig(name).search()
+  return check(config)
+}
+
+main().then(
   () => process.exit(0),
   error => {
     if (error instanceof check.NotFoundError) {
