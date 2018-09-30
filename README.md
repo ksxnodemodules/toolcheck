@@ -35,4 +35,4 @@ When either `git` or `bash` is missing, `npm install` will fail and prints missi
 
 ## License
 
-[MIT](https://git.io/fxf1N) © [Hoàng Văn Khải](https://github.com/KSXGitHub)
+[MIT](https://git.io/fxfM8) © [Hoàng Văn Khải](https://github.com/KSXGitHub)
