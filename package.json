@@ -1,6 +1,6 @@
 {
   "name": "toolcheck",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Alert if user does not have required executables",
   "main": "index.js",
   "bin": "bin.js",
