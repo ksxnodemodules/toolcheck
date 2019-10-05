@@ -5,8 +5,9 @@ const check = require('./index')
 const { name } = require('./package.json')
 
 async function main () {
-  const { config } = await cosmiconfig(name).search()
-  return check(config)
+  const result = await cosmiconfig(name).search()
+  if (!result) return null
+  return check(result.config)
 }
 
 main().then(
