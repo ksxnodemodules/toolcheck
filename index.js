@@ -3,7 +3,7 @@ const which = require('which').sync
 
 /**
  * Check required executables
- * @param config Configration loaded by cosmiconfig
+ * @param config Configuration loaded by cosmiconfig
  * @param config.names Names of required executables
  * @returns A promise that resolves when requirement is met, rejects for otherwise
  */
