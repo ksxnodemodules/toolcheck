@@ -1,6 +1,6 @@
 'use strict'
 const process = require('process')
-const cosmiconfig = require('cosmiconfig')
+const { cosmiconfig } = require('cosmiconfig')
 const check = require('./index')
 const { name } = require('./package.json')
 
