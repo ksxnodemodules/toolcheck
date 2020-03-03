@@ -1,5 +1,5 @@
 'use strict'
-const which = require('which').sync
+const { lookpath } = require('lookpath')
 
 /**
  * Check required executables
@@ -22,26 +22,21 @@ async function main (config = {}) {
 
   const programDict = {}
   const notFoundList = []
-  const externalErrorReport = {}
 
   for (const executable of names) {
     if (typeof executable !== 'string') {
       throw new TypeError(`config.names contains non-string member: ${JSON.stringify(executable)}`)
     }
 
-    try {
-      programDict[executable] = which(executable)
-    } catch (error) {
-      if (/not found/i.test(error.message)) {
-        notFoundList.push(executable)
-      } else {
-        externalErrorReport[executable] = error
-      }
+    const realPath = await lookpath(executable)
+    if (realPath) {
+      programDict[executable] = realPath
+    } else {
+      notFoundList.push(executable)
     }
   }
 
   if (notFoundList.length) throw new NotFoundError(notFoundList)
-  if (Object.keys(externalErrorReport).length) throw new ExternalError(externalErrorReport)
 
   return programDict
 }
@@ -53,11 +48,4 @@ class NotFoundError extends Error {
   }
 }
 
-class ExternalError extends Error {
-  constructor (report) {
-    super('Failed to inspect some executables')
-    this.report = report
-  }
-}
-
-module.exports = Object.assign(main, { NotFoundError, ExternalError })
+module.exports = Object.assign(main, { NotFoundError })
