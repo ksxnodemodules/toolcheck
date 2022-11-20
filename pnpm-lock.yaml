@@ -2,13 +2,13 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/cosmiconfig': ^5.0.3
-  '@types/node': ^16.0.0
+  '@types/node': ^18.0.0
   cosmiconfig: ^6.0.0
   lookpath: ^1.0.5
 
 dependencies:
   '@types/cosmiconfig': 5.0.3
-  '@types/node': 16.11.26
+  '@types/node': 18.11.9
   cosmiconfig: 6.0.0
   lookpath: 1.0.5
 
@@ -37,11 +37,11 @@ packages:
   /@types/cosmiconfig/5.0.3:
     resolution: {integrity: sha512-HgTGG7X5y9pLl3pixeo2XtDEFD8rq2EuH+S4mK6teCnAwWMucQl6v1D43hI4Uw1VJh6nu59lxLkqXHRl4uwThA==}
     dependencies:
-      '@types/node': 16.11.26
+      '@types/node': 18.11.9
     dev: false
 
-  /@types/node/16.11.26:
-    resolution: {integrity: sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==}
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: false
 
   /@types/parse-json/4.0.0:
